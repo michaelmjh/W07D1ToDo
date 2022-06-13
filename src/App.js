@@ -24,7 +24,8 @@ function App() {
     const copyTasks = [...tasks];
     copyTasks.push({name: newTask, priority: newPriority});
     setTasks(copyTasks);
-    setNewTask("")
+    setNewTask('')
+    setNewPriority('low')
   }
 
   const showTaskList = tasks.map((task, index) => {
